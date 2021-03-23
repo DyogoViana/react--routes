@@ -1,11 +1,13 @@
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Follwo the White Rabbit</h1>
-      </header>
-    </div>
-  );
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import Routes from './routes';
+
+export default function App() {
+	return (
+		<Router>
+			<Routes />
+		</Router>
+	);
 }
 
-export default App;
