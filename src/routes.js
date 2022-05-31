@@ -5,13 +5,13 @@ import {
 	Route
 } from 'react-router-dom';
 
-import Dashboard from './pages/Dashboard';
-import Profile from './pages/Profile'
+import Home from './pages/Home/index.js';
+import Profile from './pages/Profile/Profile.js'
 
 export default function MainRoutes() {
 	return (
 		<Routes>
-			<Route path="/" element={<Dashboard />} />
+			<Route path="/" element={<Home />} />
 			<Route path="/profile" element={<Profile />} />
 		</Routes>
 	);
